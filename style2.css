@@ -1,0 +1,157 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    border: 8px solid;
+    border-color: white green white orange;
+    background-image: url(./sky.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -5;
+    height: 700px;
+    width: 99%;
+    overflow-x: hidden;
+}
+
+
+.top
+{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.happy
+{
+    background-color: orange;
+}
+
+.indep
+{
+    background-color: white;
+}
+
+.day
+{
+    background-color: green;
+}
+
+.sun
+{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: 30px;
+    left: 1350px;
+    animation: sun 22s linear infinite ;
+}
+@keyframes sun
+{
+    100%
+    {
+        transform: translateX(-200px);
+    }    
+}
+.city
+{
+    background-image: url(./city.png);
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 236px;
+    z-index: -2;
+    width: 290%;
+    height: 400px;
+    animation: city 30s linear infinite;
+}
+
+@keyframes city
+{
+    100%
+    {
+        transform: translateX(-3400px);
+    }    
+}
+
+.road
+{
+   width: 370%;
+   height: 230px;
+   position: absolute;
+   top: 486px;
+   z-index: -1;
+   animation: way 10s linear infinite;
+}
+@keyframes way
+{
+    100%
+    {
+        transform: translateX(-3400px);
+    }    
+}
+.flag
+{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 850px;
+    top: 405px;
+    z-index: 1;
+}
+.car
+{
+    position: relative;
+    z-index: 1;
+    top: 200px;
+    left: 480px;
+    height: 200px;
+    width: 500px;
+    animation: car 1s linear infinite;
+}
+
+@keyframes car 
+{
+    100%
+    {
+        transform: translateY(-1px);
+    }    
+    50%
+    {
+        transform: translateY(1px);
+    }    
+    0%
+    {
+        transform: translateY(-1px);
+    }    
+}
+.wheel
+{
+    display: flex;
+    gap: 225px;
+    position: relative;
+    left: 530px;
+    top: 105px;
+    z-index: 2;
+}
+
+
+.wheel1,.wheel2
+{
+    height: 80px;
+    width: 80px;
+    animation: rotate 1.5s linear infinite;
+
+}
+
+@keyframes rotate
+{
+    0%
+    {
+        transform: rotate(-360deg);
+    }
+}

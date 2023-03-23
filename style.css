@@ -1,0 +1,232 @@
+
+body{
+    background-color: rgb(193, 240, 97);
+}
+
+h1{
+    text-align: center;
+}
+
+.first
+{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.box1
+{
+    height: 100px;
+    width: 100px;
+    background-color: skyblue;
+    margin: 20px;
+    animation: skewX 3s infinite alternate;
+}
+
+@keyframes skewX
+{
+    0%
+    {
+        transform: skewX(-25deg);
+    }
+    100%
+    {
+        transform: skewX(25deg);
+    }
+}
+
+
+
+.box2
+{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(210, 129, 210);
+    margin: 20px;
+    animation: skewY 3s infinite alternate;
+}
+
+@keyframes skewY
+{
+    0%
+    {
+        transform: skewY(-25deg);
+    }
+    100%
+    {
+        transform: skewY(25deg);
+    }
+}
+
+.box3
+{
+    height: 100px;
+    width: 100px;
+    background-color: skyblue;
+    margin: 20px;
+    animation: rotate 3s infinite;
+}
+
+@keyframes rotate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.box0
+{
+    height: 100px;
+    width: 100px;
+    background-color: skyblue;
+    margin: 20px;
+    animation: scale 3s infinite;
+}
+@keyframes scale
+{
+    0%
+    {
+        transform:scaleY(1);
+    }
+    50%
+    {
+        transform: scaleY(0.5);
+    }
+    100%
+    {
+        transform: scaleY(1);
+    }
+}
+
+.box00
+{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(136, 65, 65);
+    margin: 20px;
+    animation: scaleX 3s infinite;
+}
+@keyframes scaleX
+{
+    0%
+    {
+        transform:scaleX(1);
+    }
+    50%
+    {
+        transform: scaleX(0.3);
+    }
+    100%
+    {
+        transform: scaleX(1);
+    }
+}
+
+.box000
+{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin: 20px;
+    animation: rotate90 2s infinite alternate;
+}
+
+@keyframes rotate90
+{
+    100%
+    {
+        transform: rotate(-90deg);
+    }   
+}
+
+.back
+{
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+}
+.tbox
+{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin: 20px;
+   
+}
+
+.xbox1
+{
+    transition: width 2s ;
+}
+
+.xbox1:hover
+{
+    width: 350px;
+}
+
+.xbox2
+{
+    transition: width 3s, height 3s;
+    transition-delay: 0.5s;
+}
+
+.xbox2:hover
+{
+    width: 250px;
+    height: 250px;
+}
+
+.xbox3
+{
+    transition: width 3s ease;
+}
+
+.xbox3:hover
+{
+    width: 280px;
+}
+
+.xbox4
+{
+    transition: width 2s ease-out;
+}
+
+.xbox4:hover
+{
+    width: 280px;
+}
+
+.xbox5
+{
+    transition: width 2s ease-in;
+}
+
+.xbox5:hover
+{
+    width: 280px;
+}
+
+.xbox6
+{
+    transition: width 2s ease-in-out;
+}
+
+.xbox6:hover
+{
+    width: 280px;
+}
+
+.xbox7
+{
+    transition: width 2s linear;
+}
+
+.xbox7:hover
+{
+    width: 280px;
+}
